@@ -14,9 +14,10 @@
     position: relative;
     cursor: pointer;
     flex: 1;
+    color: #b1b1b1;
 }
 .easytab-links > ul > li.active{
-    color: #2269A6;
+    color: #000000;
 }
 .easytab-links > ul > li.active > .arrow-down{
     font-size: 0px;
