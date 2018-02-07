@@ -10,45 +10,45 @@
 <link rel="stylesheet" href="css/easytabs.css">
 </head>
 <body>
-		<div class="easytab-links">
-			<ul>
-				<li class="active" data-id="companies">Startup Companies
-					<div class="arrow-down"></div>
-				</li>
-				<li data-id="entrepreneurs">Entrepreneurs
-					<div class="arrow-down"></div>
-				</li>
-				<li data-id="providers">Service Providers
-					<div class="arrow-down"></div>
-				</li>
-				<li data-id="providers">Service Providers
-					<div class="arrow-down"></div>
-				</li>
-				<li data-id="providers">Service Providers
-					<div class="arrow-down"></div>
-				</li>
-				<li data-id="providers">Service Providers
-					<div class="arrow-down"></div>
-				</li>
-				<li data-id="providers">Service Providers
-					<div class="arrow-down"></div>
-				</li>
-				<li data-id="providers">Service Providers
-					<div class="arrow-down"></div>
-				</li>
-				<li data-id="providers">Service Providers
-					<div class="arrow-down"></div>
-				</li>
-			</ul>
+	<div class="easytab-links">
+		<ul>
+			<li class="active" data-id="companies">Startup Companies
+				<div class="arrow-down"></div>
+			</li>
+			<li data-id="entrepreneurs">Entrepreneurs
+				<div class="arrow-down"></div>
+			</li>
+			<li data-id="providers">Service Providers
+				<div class="arrow-down"></div>
+			</li>
+			<li data-id="providers">Service Providers
+				<div class="arrow-down"></div>
+			</li>
+			<li data-id="providers">Service Providers
+				<div class="arrow-down"></div>
+			</li>
+			<li data-id="providers">Service Providers
+				<div class="arrow-down"></div>
+			</li>
+			<li data-id="providers">Service Providers
+				<div class="arrow-down"></div>
+			</li>
+			<li data-id="providers">Service Providers
+				<div class="arrow-down"></div>
+			</li>
+			<li data-id="providers">Service Providers
+				<div class="arrow-down"></div>
+			</li>
+		</ul>
+	</div>
+	<div class="easytab-panel">
+		<div class="easytab-pane active" id="companies">
 		</div>
-		<div class="easytab-panel">
-			<div class="easytab-pane active" id="companies">
-			</div>
-			<div class="easytab-pane" id="entrepreneurs">
-			</div>
-			<div class="easytab-pane" id="providers">
-			</div>
+		<div class="easytab-pane" id="entrepreneurs">
 		</div>
+		<div class="easytab-pane" id="providers">
+		</div>
+	</div>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/easytabs.js"></script>
