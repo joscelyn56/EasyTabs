@@ -1,29 +1,63 @@
+/*! 
+* EasyTabs easytabs.css https://github.com/joscelyn56/EasyTabs
+* Version - 0.0.1
+* Licensed under the MIT license - http://opensource.org/licenses/MIT
+*
+* Copyright (c) 2018 Okwu Joscelyn Kinikachi
+*/
 
+.easytab-side-menu{
+	display: flex;
+	width: 100%;
+}
 .easytab-links{
-    text-align: center;
-    background-color: #f3f3f3;
+	text-align: center;
+	background-color: #EDF1F4;
+}
+.easytab-side-links{
+	text-align: center;
+	min-height: 0px;
+	width: 150px;
 }
 .easytab-links > ul{
-    display: -webkit-inline-box;
+	display: -webkit-inline-box;
     margin-bottom: 0px;
     padding-left: 0px;
 }
-.easytab-links > ul > li{
-    list-style: none;
-    padding: 30px;
-    position: relative;
-    cursor: pointer;
-    flex: 1;
-    color: #b1b1b1;
+.easytab-side-links > ul{
+	display: block;
+    margin-bottom: 0px;
+    padding-left: 0px;
 }
-.easytab-links > ul > li.active{
-    color: #000000;
+.easytab-links > ul > li, .easytab-side-links > ul > li{
+	list-style: none;
+	cursor: pointer;
+}
+.easytab-links > ul > li{
+	color: #4D4D4D;
+}
+.easytab-side-links > ul > li{
+	color: #515151;
+}
+.easytab-links > ul > li{
+	position: relative;
+	padding: 30px;
+	flex: 1;
+}
+.easytab-side-links > ul > li{
+	padding: 15px 25px;
+}
+.easytab-links > ul > li.active, .easytab-side-links > ul > li.active{
+	color: #2269A6;
+}
+.easytab-side-links > ul > li.active{
+	background-color: #FFFFFF;
 }
 .easytab-links > ul > li.active > .arrow-down{
-    font-size: 0px;
+	font-size: 0px;
     line-height: 0%;
     width: 20px;
-    border-top: 20px solid #f3f3f3;
+    border-top: 20px solid #EDF1F4;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     position: absolute;
@@ -34,7 +68,7 @@
     margin-right: auto;
 }
 .easytab-links > ul > li.active > .arrow-up{
-    font-size: 0px;
+	font-size: 0px;
     line-height: 0%;
     width: 20px;
     border-bottom: 12px solid #e0e0e0;
@@ -48,35 +82,48 @@
     margin-right: auto;
 }
 .easytab-panel{
-    height: auto;
-    width: 100%;
+	height: auto;
+	width: 100%;
 }
-.easytab-pane{
-    min-height: 300px;
-    width: 100%;
-    display: none;
+.easytab-side-panel{
+	height: auto;
+	width: 100%;
 }
-.easytab-panel > .active{
-    display: block;
+.easytab-pane, .easytab-side-pane{
+	min-height: 300px;
+	display: none;
 }
-
+.easytab-panel > .active, .easytab-side-panel > .active{
+	display: block;
+}
 @media (max-width: 767px){
-    .easytab-links > ul {
-        display: inline-flex;
-    }
-    .easytab-links > ul > li {
-        font-size: 14px;
-        border-bottom: 1px solid #efefef;
-    }
+	.easytab-links > ul {
+	    display: inline-flex;
+	}
+	.easytab-links > ul > li {
+	    font-size: 14px;
+	    border-bottom: 1px solid #efefef;
+	}
+	.easytab-side-menu {
+	    display: block;
+	}
+	.easytab-side-links {
+	    text-align: left;
+	    width: 100%;
+	}
+	.easytab-side-links > ul {
+	    display: -webkit-inline-box;
+	    margin-bottom: 0rem;
+	}
 }
 @media (max-width: 650px){
-    .easytab-links > ul{
-        display: block;
-    }
-    .easytab-links > ul > li.active > .arrow-down{
-	border-bottom: 12px solid #e0e0e0;
-	border-left: 12px solid transparent;
+	.easytab-links > ul{
+	    display: block;
+	}
+	.easytab-links > ul > li.active > .arrow-down{
+		border-bottom: 12px solid #e0e0e0;
+		border-left: 12px solid transparent;
     	border-right: 12px solid transparent;
     	bottom: 0px;
-    }
+	}
 }
